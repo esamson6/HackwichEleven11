@@ -15,6 +15,7 @@
 		9DDB49B32628C42A0028FBC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDB49B12628C42A0028FBC6 /* LaunchScreen.storyboard */; };
 		9DDB49BE2628C42A0028FBC6 /* HackwichEleven11Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDB49BD2628C42A0028FBC6 /* HackwichEleven11Tests.swift */; };
 		9DDB49C92628C42A0028FBC6 /* HackwichEleven11UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDB49C82628C42A0028FBC6 /* HackwichEleven11UITests.swift */; };
+		9DDB49DA2628D46A0028FBC6 /* RestaurantAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDB49D92628D46A0028FBC6 /* RestaurantAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9DDB49C42628C42A0028FBC6 /* HackwichEleven11UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackwichEleven11UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDB49C82628C42A0028FBC6 /* HackwichEleven11UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackwichEleven11UITests.swift; sourceTree = "<group>"; };
 		9DDB49CA2628C42A0028FBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DDB49D92628D46A0028FBC6 /* RestaurantAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				9DDB49A82628C42A0028FBC6 /* SceneDelegate.swift */,
 				9DDB49AA2628C42A0028FBC6 /* ViewController.swift */,
 				9DDB49AC2628C42A0028FBC6 /* Main.storyboard */,
+				9DDB49D92628D46A0028FBC6 /* RestaurantAnnotation.swift */,
 				9DDB49AF2628C42A0028FBC6 /* Assets.xcassets */,
 				9DDB49B12628C42A0028FBC6 /* LaunchScreen.storyboard */,
 				9DDB49B42628C42A0028FBC6 /* Info.plist */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DDB49AB2628C42A0028FBC6 /* ViewController.swift in Sources */,
+				9DDB49DA2628D46A0028FBC6 /* RestaurantAnnotation.swift in Sources */,
 				9DDB49A72628C42A0028FBC6 /* AppDelegate.swift in Sources */,
 				9DDB49A92628C42A0028FBC6 /* SceneDelegate.swift in Sources */,
 			);
