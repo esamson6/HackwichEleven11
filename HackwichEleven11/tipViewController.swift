@@ -11,6 +11,9 @@ class tipViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //set navigation title
+        title = "Gratuity"
+        
 
         // Do any additional setup after loading the view.
     }

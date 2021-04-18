@@ -24,6 +24,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //set navigation title
+        title = "Eats"
+        
         //Do any additional setup after loading the view.
         centerMapOnLocation(location: initialLocation)
         
