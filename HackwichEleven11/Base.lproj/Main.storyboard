@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WdL-zs-xZR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -9,6 +9,40 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="eN2-WU-Jr2">
+            <objects>
+                <viewController id="ojr-3l-bi6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gJc-kA-ZdD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="e4k-OA-qEr"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bt6-DU-QVc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SRE-yc-uYm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1751" y="482"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xNv-KJ-Wdh">
+            <objects>
+                <tabBarController id="WdL-zs-xZR" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Phl-cT-pW7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="C5i-6g-lFv" kind="relationship" relationship="viewControllers" id="NDR-so-Ad9"/>
+                        <segue destination="Jqv-MV-nco" kind="relationship" relationship="viewControllers" id="kQn-Jq-ewb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gi4-sH-usj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1594" y="-323"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HackwichEleven11" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,14 +51,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="43x-q8-kwR">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ZBx-Pw-avv"/>
                                 </connections>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="43x-q8-kwR" secondAttribute="trailing" id="6TC-x9-E4P"/>
                             <constraint firstItem="43x-q8-kwR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="J7Q-mW-ekk"/>
@@ -32,18 +66,62 @@
                             <constraint firstItem="43x-q8-kwR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iYb-St-HEi"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="doz-tQ-fJ0"/>
                     <connections>
                         <outlet property="mapView" destination="43x-q8-kwR" id="s2J-X8-OVJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-386" y="127"/>
+            <point key="canvasLocation" x="387" y="455"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="HZ8-4I-SwO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C5i-6g-lFv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" image="creditcard" catalog="system" id="Kro-L9-ycR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vdt-7f-LwD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ojr-3l-bi6" kind="relationship" relationship="rootViewController" id="Ll8-Bj-E4t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5SC-bb-gDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2862" y="481"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="uQy-z3-7tu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jqv-MV-nco" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="car.2" catalog="system" id="k42-Ks-Joq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jec-Ao-mAV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gny-zu-N1P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t07-Iw-byU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-687" y="456"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="car.2" catalog="system" width="128" height="72"/>
+        <image name="creditcard" catalog="system" width="128" height="88"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
